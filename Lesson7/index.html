@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Древовидные структуры</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize-opentype.css/0.2.3/normalize-opentype.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
+    <style>
+        li{margin-bottom: 16px;}
+        li:first-child>span{background-color: red;color: white;}
+        li:last-of-type>span{background-color: black;color: white;}
+        li:nth-child(even){margin-left: 15px;}
+        p{font-size: 25px;color: blue; margin-left: 10px;}
+        div{font-size: 20px;color: red; margin-left: 10px;}
+        .paragraphs>p:nth-of-type(odd){background-color: gray;}
+    </style>
+</head>
+<body>
+    <h1>Древовидные структуры</h1>
+    <ul>
+        <li><span>1- :first-child</span></li>
+        <li><span>2- :last-child</span></li>
+        <li><span>3- :nth-child</span></li>
+        <li><span>4- :nth-last-child</span></li>
+        <li><span>5- :nth-of-type</span></li>
+        <li><span>6- :last-of-type</span></li>
+    </ul>
+    <br>
+    <hr>
+    <br>
+    <div class="paragraphs">
+       <p>paragraph #1</p>
+       <p>paragraph #2</p>
+       <div>Div</div>
+       <p>paragraph #3</p>
+       <p>paragraph #4</p>
+    </div>
+</body>
+</html>

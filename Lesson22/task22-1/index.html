@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медиа запросы</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
+    <style>
+       *{box-sizing: border-box;}
+       .square{
+        height: 100px;width: 100px;
+        background-color: blue;
+        margin: 16px;
+       }
+       .conteiner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+       }
+       @media screen and (max-width: 600px) {
+        .square{
+          background-color: green;
+        }    
+       }
+       @media screen and (orientation:portrait){
+        .conteiner{
+            flex-direction: column;
+        }    
+       }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+</body>
+</html>

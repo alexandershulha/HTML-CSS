@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinning circle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
+    <style>
+        *{box-sizing: border-box;}
+        .container{
+            width: 100vw;height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .span{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            text-transform: uppercase;
+            animation: blinking 2s linear infinite;
+        }
+        @keyframes blinking{
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+        .spinner{
+            display: flex-box;
+        }
+        .circle{
+            width: 50px;height: 50px;
+            border-radius: 50%;
+            border: 4px solid lightgrey;
+            margin-bottom: 8px;
+            margin-left: 25px;
+            animation: vip 2s linear;
+            border-top-color: black;
+        }
+        @keyframes vip{
+            from{
+                transform: rotate(0);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="spinner">
+            <div class="circle"></div>
+            <span class="span">Loading...</span>
+        </div>
+    </div>
+</body>
+</html>

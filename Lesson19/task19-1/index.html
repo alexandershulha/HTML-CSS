@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Плавные переходы</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
+    <style>
+        *{box-sizing: border-box;}
+        .conteiner{
+            margin: 32px;
+        }
+        .rect{
+            width: 100px;height: 100px;
+            background-color: aqua;
+            margin-bottom: 15px;
+            opacity: 0.5;
+            font-size: 25px;
+            display: flex;
+            align-items: center;justify-content: center;
+            transition: width 1s,opacity 2s;
+        }
+        .rect:hover{
+            background-color: coral;
+            width: 100%;
+            opacity: 1;
+        }
+        .conteiner:nth-child(1){
+            transition-timing-function: linear;
+        }
+        .conteiner:nth-child(2){
+            transition-timing-function: ease;
+        }
+        .conteiner:nth-child(3){
+            transition-timing-function: ease-in;
+        }
+        .conteiner:nth-child(4){
+            transition-timing-function: ease-out;
+        }
+        .conteiner:nth-child(5){
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="rect">Linear</div>
+        <div class="rect">Ease</div>
+        <div class="rect">Ease-in</div>
+        <div class="rect">Ease-out</div>
+        <div class="rect">Ease-in-out</div>
+    </div>
+</body>
+</html>

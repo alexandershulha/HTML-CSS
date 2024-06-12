@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логин форма</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
+    <style>
+        *{box-sizing: border-box;}
+        .page{
+            display: flex;
+            background-color: bisque;
+        }
+        .login-form{
+            display: inline-flexbox;
+            border: 1px solid black;
+            width: 300px;height: 420px;
+            background-color: aqua;
+            margin: 150px auto;
+            box-shadow: 0px 4px 8px 0px rqba(0,0,0,0.2);
+        }
+        .form-control{
+            font-size: 16px;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 16px;
+        }
+        .form-title{
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+        }
+        .form-input{
+            margin-bottom: 8px
+            border: 1px solid #808080;
+            width: 260px;height: 32px;
+            border-radius: 4px;
+            padding: 4px;
+            outline: none;
+        }
+        .form-lable{
+            margin-bottom: 4px;
+        }
+        .submit-buttom{
+            width: 260px;height: 32px;
+            border-radius: 4px;
+            background-color: #ff7f50;
+            color: white;
+            margin: 16px 20px;
+        }
+        .form-input[type="text"]{
+            border: 3px solid #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <form class="login-form">
+            <h1 class="form-title">Login</h1>
+            <div class="form-control">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" type="email"
+                id="email" name="email"
+                placeholder="mail@example.com"
+                required>
+            </div>
+            <div class="form-control">
+                <label class="form-label" for="userName">Full Name</label>
+                <input class="form-input" type="text"
+                 id="userName" name="userName">
+            </div>
+            <div class="form-control">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-input" type="password"
+                id="password" name="password" required>
+            </div>
+            <button class="submit-buttom" type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

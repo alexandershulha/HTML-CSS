@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css;
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
+    <style>
+        *{box-sizing: border-box;}
+        .dropdown{
+            margin: 15px;display: inline-block;
+            background-color: green;color: white;
+            padding: 8px;border-radius: 8px;
+            position: relative;
+            height: 34px;
+            cursor: pointer;
+        }
+        .dropdown-list{
+            color: black;position: absolute;
+            list-style-type: none;
+            background-color: burlywood;
+            margin: 0;padding: 0;
+            display: none;
+            min-width: 100px;top: 34px;
+        }
+        li{margin: 8px;}
+        .dropdown:hover .dropdown-list{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <span class="dropdown-text">Hover me</span>
+        <ul class="dropdown-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+</body>
+</html>

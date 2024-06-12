@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
+    <style>
+       .main-image{
+        margin: 20px auto;
+        display: block;
+        max-width: 75%;
+        margin-left: 100px;
+        border-radius: 10px;
+       }
+       .card{
+         margin: 8px;
+         box-shadow: 5px -5px 5px 1px #904EA0; 
+
+       }
+       .gallery{
+        display: flex;
+       }
+       .square-filtr{
+        filter: opacity(50%);}
+        .vip{
+            color: blue;
+            font-size: 25px;
+            text-align: center;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <img class="main-image" src="nature.jpeg" alt="Mountains">
+    <div class="gallery">
+        <figure class="card">
+            <img class="square-filtr" src="background.jpg" alt="square">
+            <figcaption class="vip">Square</figcaption>
+        </figure>
+    </div>
+</body>
+</html>

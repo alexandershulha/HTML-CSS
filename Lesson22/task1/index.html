@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
+    <style>
+        *{box-sizing: border-box;}
+        .conteiner{
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        .square{
+            width: 100px;height: 100px;
+            margin: 16px;
+            background-color: blue;
+        }
+        @media screen and (max-width:600px){
+            .square{
+                background-color: blueviolet;
+            }    
+        }
+        @media screen and (orientation: portrait){
+            .conteiner{
+                flex-direction: column
+            }    
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+</body>
+</html>

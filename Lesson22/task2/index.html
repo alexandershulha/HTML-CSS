@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
+    <style>
+       .navigation{
+        height: 200px;
+        background-color: coral;
+        display: flex;
+        flex-grow: 1;
+       }
+       .products-list{
+        height: 200px;
+        background-color: aqua;
+        display: flex;
+        flex-grow: 1;
+       }
+       .news{
+        height: 200px;
+        background-color: chartreuse;
+        display: flex;
+        flex-grow: 1;
+       }
+       span{
+        background-color: antiquewhite;
+        margin: 8px;
+        border-radius: 4px;
+        text-transform: lowercase;
+        margin: auto;
+       }
+       @media screen and (min-width: 600px){
+        .products{
+            display: flex;
+            flex-grow: 2;
+        }
+       }
+       @media screen and (min-width:1200px) {
+        .main{
+            display: flex;
+        }    
+       }
+    </style>
+</head>
+<body>
+    <main class="main">
+       <section class="products">
+           <div class="navigation"><span>Navigation</span></div>
+           <div class="products-list"><span>Products</span></div>
+       </section>
+           <div class="news"><span>News</span></div>
+    </main>
+</body>
+</html>

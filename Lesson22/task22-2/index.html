@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using breakpoints</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
+    <style>
+        *{box-sizing: border-box;}
+        .navigation{
+            background-color: coral;
+            height: 200px;
+            display: flex;
+            flex-grow: 1;
+        }
+        .products-list{
+            background-color: aqua;
+            height: 200px;
+            display: flex;
+            flex-grow: 1;
+        }
+        .news{
+            background-color: chartreuse;
+            height: 200px;
+            display: flex;
+            flex-grow: 1;
+        }
+        .conteiner{
+            height: 100vh;
+        }
+        span{
+            background-color: antiquewhite;
+            border-radius: 4px;
+            font-size: 25px;
+            text-transform: lowercase;
+            margin: auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        @media  screen and (min-width: 600px) {
+            .section{
+                display: flex;
+                flex-grow: 2 ;
+            }    
+        }
+        @media  screen and (min-width: 900px) {
+            .conteiner{
+                display: flex;
+            }    
+        }
+    </style>
+</head>
+<body>
+    <main class="conteiner">
+        <section class="section">
+            <div class="navigation"><span>Navigation</span></div>
+            <div class="products-list"><span>Products</span></div>
+        </section>
+        <div class="news"><span>News</span></div>
+    </main>
+</body>
+</html>

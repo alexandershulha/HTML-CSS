@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+.div{
+    margin: 20px;
+}
+.rect{
+    width: 100px;height: 100px;
+    background-color: coral;
+    margin-bottom: 15px;
+    transition: width 1s,opacity 5s;
+    opacity: 0.5;
+}     
+.rect:hover{
+    width: 100%;
+    opacity: 1;
+}
+.rect:nth-child(odd){
+    transition-timing-function: ease-in-out;
+}
+.rect:nth-child(even){
+    transition-timing-function: ease-out;
+}

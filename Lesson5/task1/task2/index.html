@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Селекторы атрибутов</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css
+    ">
+    <style>
+       [data-description] { color: red; font-size: 20px; background-color: darkkhaki;}
+       *{margin: 6px;}
+       [href] { font-size: 30px;}
+       [href][target] {color: darkgreen;}
+       [data-description="archors"] {background-color: gold;}
+       [type="text"] { background-color: crimson;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Селекторы атрибутов</h1>
+    </header>
+    <main>
+        <p data-description="attributes">
+            Атрибуты используются,чтобы асоциировать некоторые данные с определенным элементом
+        </p>
+        <p data-description="archors">
+            Ссылки используются в HTML ДОКУМЕНТАХ для переходов на страницы <a href="#">того же</a> или <a target="_blank" href="https://www.wikipedia.org/">для других вебсайтов</a>
+        </p>
+        <div>
+            <p>
+                Инпуты могут принимать не только текстовые данные от пользователя , а и выступать в роли чекбоксов и многих других элементов
+            </p>
+            <input type="text">
+            <input type="checkbox">
+            <input type="password">
+        </div>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню сайта</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        *{box-sizing: border-box;}
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        .header{
+            height: 3em;
+            background-color: #eee;
+            padding: 1em;
+        }
+        .button{
+            border: none;
+            cursor: pointer;
+            font-size: 2em;
+            padding: 0;
+            margin-top: -10px;
+        }
+        .navigation{
+            width: 20%;
+            padding: 0.5em;
+        }
+        .nav-list{
+            list-style-type: none;
+            padding: 0;
+        }
+        .nav-list-link{
+            background-color: #808080;
+            color: white;
+            line-height: 2em;
+            margin-bottom: 0.5em;
+            padding-left: 0.5em;
+            text-decoration: none;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        @media  screen and (min-width:600px) {
+           .button{
+            display: none;
+           }          
+        }
+        @media screen and (max-width:600px) {
+            .nav-list{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <button class="button" type="icon" name="fa-bars">
+        <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+    <main class="main">
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a class="nav-list-link" href="#">Responsive images</a></li>
+                <li class="nav-list-item"><a class="nav-list-link" href="">Mediaqueries</a></li>
+                <li class="nav-list-item"><a class="nav-list-link" href="">Flexbox</a></li>
+            </ul>
+        </nav>
+    </main>
+</body>
+</html>

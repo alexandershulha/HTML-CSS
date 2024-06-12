@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Индикатор загрузки</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
+    <style>
+        *{box-sizing: border-box;}
+        @keyframes moving{
+            from{
+                left: 420px;
+                opacity: 1;
+            }
+            to{
+                left: 520px;
+            }
+        }
+        @keyframes blinking{
+                0%{
+                    opacity: 0;
+                }
+                50%{
+                    opacity: 1;
+                }
+                100%{
+                    opacity: 0;
+                }
+        }
+        .conteiner{
+            width: 100vw;height: 100vh;
+            
+        }
+        .spinner{
+            display: flex;
+            width: 100vw;height: 100vh;
+            align-items: center;
+            justify-content: center;    
+        }
+        .spinner-text{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            text-transform: uppercase;
+            position: absolute;
+            animation: blinking 2s ;
+            animation-iteration-count: infinite;
+            
+        }
+        .rect{
+            width: 10px;height: 4px;
+            border-radius: 2px;
+            background-color: black;
+            margin-top: 20px;
+            position: absolute;
+            animation: moving 2s forwards;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="spinner">
+            <span class="spinner-text">Loading...</span>
+            <div class="rect"></div>
+        </div>
+    </div>
+</body>
+</html>

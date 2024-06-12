@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
+    <style>
+        *{box-sizing: border-box;}
+        .rectangle{
+            width: 350px;height: 300px;border: 5px solid red;
+            border-radius: 15px;margin: 30px 20px; background-color: green;}
+            .oval{
+                width: 330px;height: 200px;border: 3px solid blue;
+                border-radius: 50%;background-color: yellow;
+                margin: 40px 6px;
+            }
+            .rectangle1{
+                width: 400px;height: 200px;border: 5px solid black;
+                margin: 20px;
+            }
+            .cv{
+                width: 100px;height: 100px;border: 3px dashed red;
+                display: inline-block;margin: 5px;
+            }
+            .cv1{
+                width: 260px;height: 100px;border: 3px solid green;
+                display: inline-block;margin: 5px;
+            }
+            .triangle{
+                width: 50px;height: 50px;
+                border: 25px solid transparent;margin: 30px;
+                border-top-color: red;
+            }
+    </style>
+</head>
+<body>
+    <div class="rectangle">
+        <div class="oval"></div>
+    </div>
+    <div class="rectangle1">
+        <div class="cv">Фото</div>
+        <div class="cv1">Текст.......................</div>
+    </div>
+    <div class="triangle"></div>
+</body>
+</html>

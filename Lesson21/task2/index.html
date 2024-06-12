@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
+    <style>
+        *{box-sizing: border-box;}
+        .content{
+            display: flex;
+            min-height: 100vh;
+        }
+        .galery{
+            width: 80%;
+            background-color: coral;
+            display: flex;
+        }
+        .aside{
+            width: 20%; background-color: aqua;
+            display: flex;
+        }
+        .image{
+            max-width: 100%;
+            margin: auto;
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+        }
+        .span{
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 10px;
+            color: white;
+            margin: auto;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <main class="content">
+        <section class="galery">
+            <img class="image" src="big.jpeg" alt="Tree">
+        </section>
+        <aside class="aside">
+             <span class="span">
+                Keep calm
+             </span>
+        </aside>
+    </main>
+</body>
+</html>
