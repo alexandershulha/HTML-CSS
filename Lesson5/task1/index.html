@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic selectors</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css
-    ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+    crossorigin="anonymous">
     <style>
-        body{ color: green;}
-        *{ margin: 8px;}
-        .link{ background-color: greenyellow;}
-        #myid{font-size: 20px; background-color: coral;}
+        *{background-color: green;}
+        ul{font-size: 24px;}
+        .page-header{background-color: orange;}
+        #best{border: 2px  solid red;}
     </style>
 </head>
 <body>
-    <h1 class="link">Basic selectors</h1>
+    <h1 class="page-header">Basic Selectors</h1>
     <article>
-        <h2 class="link">Базовыми селекторами являются</h2>
+        <h2 class="page-header">Базовыми селекторами являются:</h2>
         <ul>
             <li>Селектор элемента</li>
-            <li>Селектор класса</li>
-            <li id="myid">Селектор id</li>
-            <li>Универсальный Селектор</li>
+            <li id="best">Селектор класса</li>
+            <li>Селектор id</li>
+            <li>Универсальный селектор</li>
         </ul>
     </article>
     <article>
-        <h2 class="link">Селекторы</h2>
-        <p>Используются для того,чтобы удобно выбирать нужные элементы</p>
+        <h2 class="page-header">Селекторы</h2>
+        <P>Используются для того, чтобы удобно выбирать нужные элементы страницы
+         и задавать им определенные стили</P>
     </article>
 </body>
 </html>
