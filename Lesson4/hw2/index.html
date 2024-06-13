@@ -3,25 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Базовая страничка</title>
+    <style>
+        .header{
+            height: 100px;
+            background-color: red;
+        }
+        h1{font-size: 24px;
+           color: white;}
+        .main{
+            height: 300px;
+            background-color: blue;
+            color: white;
+            font-size: 18px;
+        }
+        .footer{
+            height: 100px;
+            background-color: green;
+            color: white;
+            font-size: 18px;
+        }
+
+        
+    </style>
 </head>
 <body>
-    <div>
-        <p style="color: blue; font-size: 25px;">Содержание
-            <ul>
-                <li>Пункт1</li>
-                <li>Пункт2</li>
-                <li>Пункт3</li>
-            </ul>
+    <header class="header">
+        <h1>Main header on the webpage</h1>
+    </header>
+    <main class="main">
+        <p>
+            Semantic layout allows search engines to better understand the content of the page 
         </p>
-        <p style="color: brown;font-size: 20px;">План
-            <ul class="list">
-                <li>Часть1</li>
-                <li>Часть2</li>
-                <li>Часть3</li>
-            </ul>
-        </p>
-    </div>
+    </main>
+    <footer class="footer">Don't forget to reset browser styles to default</footer>
 </body>
 </html>

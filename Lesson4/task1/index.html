@@ -3,27 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Style</title>
+    <title>Первые стили</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
 </head>
 <body>
-    <br>
-    <br>
-    <hr>
-    <div style="font-size: 25px;"">
-        <p style="color: aqua;">Таблица</p>
-        <br>
-            <ul>
-                <li style="color: blue;" >Text</li>
-                <br>
-                <li style="color: brown;">New text</li>
+    <section style="color: green;">
+        <p>You can style an element using:</p>
+            <ul style="font-size: 22px;">
+                <li>'style' attribute</li>
+                <li>'style' tag</li>
+                <li style="color: orange;">Using separate file with <code>.css</code> extention</li>
             </ul>
-        
-    </div>
-    <hr>
-    <br>
-    <br>
-    <div>
-        <p style="background-color: aqua;"">Pizza</p>
-    </div>
+    </section>
+    <section style="background-color: yellow;">
+        <p>CSS properties "width" and "height" do not work for inline elements</p>
+        <p style="background-color: red;color: white;">
+            Inheritance in CSS is the mechanism by which the property values of a parent element are
+        passed on to its children elements
+        </p>
+    </section>
 </body>
 </html>
