@@ -3,26 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operators in attrebute selectors</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
-    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
-    <style>
-        a[href^=broken]{border: 6px solid black }
-        li{margin-bottom: 15px; font-size: 20px;}
-        a[href^=https]{color: crimson;}
-        a[href$=com]{font-size: 25px; border: 4px dashed blue; background-color: darkkhaki; margin-left: 40px;}
-        a[href*=org]{color: darkgreen;}
-        a[title~="popular"]{font-size: 35px;}
-        
-    </style>
+    <title>Operators in attribute selectors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+     integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+     crossorigin="anonymous">
+    <link rel="stylesheet" text="text/css" href="selectors.css">
 </head>
 <body>
-    <h1 class="page-header">
-        Operators in attrebute selectors
-    </h1>
+    <h1 class="page-header">Operators in attribute selectors</h1>
     <ul>
         <li>
-            <a href="https://www.mozila.org" title="link" lang="en-gb">Mozila</a>
+            <a href="https://www.mozilla.org" title="link" lang="en-gb">Mozilla</a>    
         </li>
         <li>
             <a href="broken link https://microsoft.com" lang="english">Microsoft</a>
@@ -31,18 +22,18 @@
             <a href="https://www.google.com" title="item popular">Google</a>
         </li>
         <li>
-            <a href="https://www.opera.com" title="popular item" lang="engl">Opera</a>
+            <a href="https://www.opera.com" title="popular item" lang="en-us">Opera</a>
         </li>
         <li>
-            <a href="https://www.apple.com" title=" Link
-            popular">Apple</a>
+            <a href="https://www.apple.com" title="link popular">Apple</a>
         </li>
         <li>
-            <a href="https://www.wikipedia.org" title="supper popular">Wikipedia</a>
+            <a href="https://www.wikipedia.org/" title="super popular">Wikipedia</a>
         </li>
         <li title="item">
-            <a target="_blank" href="https://www.broken.org">Strang company</a>
+            <a target="_blank" href="https://broken.org/">Strange company</a>
         </li>
+        
     </ul>
 </body>
 </html>
