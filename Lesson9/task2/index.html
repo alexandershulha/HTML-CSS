@@ -3,61 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Позиционирование</title>
+    <title>Clearfix - очистка плавающих элементов</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
-    <style>
-        *{box-sizing: border-box;}
-        .square{
-            height: 100px;width: 100px;
-            border: 3px solid black;
-            ;margin: 5px;
-        }
-        .big{
-            background-color: red;
-            float: left;
-        }
-        .vip{
-            background-color: green;
-            float: right;
-        }
-        .footer{
-            border: 3px solid black;
-            height: 20px; 
-            clear: both;
-        }
-        .norm{
-            float: left;
-            width: 50%;
-        }
-        .ok{background-color: aqua;color: blue;}
-        .os{background-color: darksalmon;color: red;}
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section class="norm ok">
+    <main>
+    <section class="conteiner">
         <h2>Big text</h2>
-        <div class="square big"></div>
-        <div class="square vip"></div>
+        <div class="red square"></div>
+        <div class="green square"></div>
         <p>
-            As a public OSS project, cdnjs relies on contributions and donations from the community.
-             You can get involved on GitHub or help support us financially by donating $5 to cdnjs
-              via Open Collective or Patreon. 
+            The float CSS property places an element on the left or right side of its container,
+            allowing text and inline elements to wrap around it. The element is removed from the normal
+            flow of the page, though still remaining a part of the flow (in contrast to absolute
+            positioning). As mentioned above, when an element is floated, it is taken out of the normal
+            flow of the document (though still remaining part of it). It is shifted to the left, or
+            right, until it touches the edge of its containing box, or another floated element. In this
+            example, there are three colored squares. Two are floated left, and one is floated right.
+            Note that the second "left" square is placed to the right of the first. Additional squares
+            would continue to stack to the right, until they filled the containing box, after which they
         </p>
         <footer class="footer"></footer>
     </section>
+    <section class="conteiner">
+        <h2>Small text</h2>
+        <div class="red square"></div>
+        <div class="green square"></div>
+        <p>Small text</p>
+        <footer class="footer"></footer>
+    </section>
+    </main>
 </body>
 </html>
-<body>   
-</body>
-<section class="norm os">
-    <h2>Big text</h2>
-    <div class="square big"></div>
-    <div class="square vip"></div>
-    <p>
-        As a public OSS project, cdnjs relies on contributions and donations from the community.
-        You can get involved on GitHub or help support us financially by donating $5 to cdnjs
-         via Open Collective or Patreon. 
-    </p>
-    <footer class="footer"></footer>
-</section>
