@@ -1,0 +1,12 @@
+.header{background-color: yellow;
+    height: 50px;}
+.content{background-color: pink;
+    width: 80%;}
+.sidebar{background-color: grey;
+    width: 20%;}
+.footer{background-color: green;
+   height: 50px;
+   clear: both;}
+.content,.sidebar{height: 500px;
+    float: left;}
+*{box-sizing: border-box;}

@@ -3,38 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Overflow</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    <title>Overflow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
     <style>
-        body{display: flex;}
-        div{
-            width: 150px;height: 100px;background-color: aquamarine;
-            margin: 15px;
+        *{box-sizing: border-box;}
+        .articles{display: flex;}
+        .articles>div{
+            width: 150px;height: 100px;
+            background-color: beige;
+            margin: 16px;
+        }
+        .visible-text{
+            overflow: visible;
         }
         .cropped{
             overflow: hidden;
         }
         .both-scrolls{
             overflow: scroll;
+            cursor: all-scroll;
         }
         .vertical-scroll{
-            overflow: auto; cursor: all-scroll;
+            overflow-x: auto;
+            cursor: all-scroll;
         }
     </style>
 </head>
 <body>
-    <div class="visible-text">
-        «Страдная пора. Косцы» — картина русского художника Григория Мясоедова (1834—1911), оконченная в 1887 году. Хранится в Государственном Русском музее в Санкт-Петербурге (инв. Ж-6899).
-    </div>
-    <div class="cropped">
-        «Страдная пора. Косцы» — картина русского художника Григория Мясоедова (1834—1911), оконченная в 1887 году. Хранится в Государственном Русском музее в Санкт-Петербурге (инв. Ж-6899).
-    </div>
-    <div
-    class="both-scrolls">
-        «Страдная пора. Косцы» — картина русского художника Григория Мясоедова (1834—1911), оконченная в 1887 году. Хранится в Государственном Русском музее в Санкт-Петербурге (инв. Ж-6899).
-    </div>
-    <div class="vertical-scroll">
-        «Страдная пора. Косцы» — картина русского художника Григория Мясоедова (1834—1911), оконченная в 1887 году. Хранится в Государственном Русском музее в Санкт-Петербурге (инв. Ж-6899).
+    <div class="articles">
+        <div class="visible-text">
+            You can use the overflow property when you want to have better control of the layout. The
+            overflow property specifies what happens if content overflows an element's box.
+        </div>
+        <div class="cropped">
+            You can use the overflow property when you want to have better control of the layout. The
+            overflow property specifies what happens if content overflows an element's box.
+        </div>
+        <div class="both-scrolls">
+            You can use the overflow property when you want to have better control of the layout. The
+            overflow property specifies what happens if content overflows an element's box.
+        </div>
+        <div class="vertical-scroll">
+            You can use the overflow property when you want to have better control of the layout. The
+            overflow property specifies what happens if content overflows an element's box.
+        </div>
     </div>
 </body>
 </html>

@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fonts</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    <title>Списки</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <style>
-        h1{
-            text-align: center;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            width: 50vw;
-            margin: 16px auto;
+        .list{
+            list-style-type: none;
+            font-size: 1.5em;
         }
-        div{
-            height: 200px;
-            background-color: chocolate;
-            text-align: center;
-            line-height: 200px;
+        .third{
+            text-decoration: green underline;
+        }
+        .second{
+            text-decoration: line-through;
+        }
+        .first{
+            text-decoration: red overline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Some header.Список міжзоряних навколозоряних молекул.</h1>
+        <h1>Стилизуем списки</h1>
     </header>
-    <div>Some text</div>
+    <main class="conteiner">
+        <p>
+            Относительные единицы измерения (em и rem) зависят от некоторых параметров родительских
+        элементов. Абсолютные величины (px) будут отображаться одиннаково повсюду.
+        </p>
+        <ul class="list">
+           <li class="first">Overline</li>
+           <li class="second">Line-through</li>
+           <li class="third">Underline</li>
+        </ul>
+    </main>
 </body>
 </html>
