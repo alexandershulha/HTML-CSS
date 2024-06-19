@@ -3,42 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multimedia</title>
+    <title>Img тег</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
     <style>
-       .main-image{
-        margin: 20px auto;
-        display: block;
-        max-width: 75%;
-        margin-left: 100px;
-        border-radius: 10px;
-       }
-       .card{
-         margin: 8px;
-         box-shadow: 5px -5px 5px 1px #904EA0; 
-
-       }
-       .gallery{
-        display: flex;
-       }
-       .square-filtr{
-        filter: opacity(50%);}
-        .vip{
-            color: blue;
-            font-size: 25px;
+        *{box-sizing: border-box;}
+        .image-conteiner{
+            display: flex;
+            margin-top: 50px;
+            margin-bottom: 50px;}
+        .foto-big{
+            margin: 10px auto;
+            max-width: 100%;
+            border-radius: 20px;}
+        .gallery{
+            display: flex;}
+        .card{display: block;
+            margin: 16px;
+            box-shadow: 0px 7px 18px -8px rgba(0, 0, 0, 0.75);}
+        .writhe1,.writhe2,.writhe3{
             text-align: center;
             line-height: 30px;
-        }
+            text-transform: lowercase;}
+        .foto-small1{
+            filter: opacity(50%);}
+        .foto-small2{
+            filter: blur(4px);}
+        .foto-small3{
+            filter: invert(100%);}
     </style>
 </head>
 <body>
-    <img class="main-image" src="nature.jpeg" alt="Mountains">
+    <div class="image-conteiner">
+        <img class="foto-big" src="big.jpeg" alt="Поле">
+    </div>
     <div class="gallery">
         <figure class="card">
-            <img class="square-filtr" src="background.jpg" alt="square">
-            <figcaption class="vip">Square</figcaption>
+            <img class="foto-small1" src="small.jpg" alt="Река">
+            <figcaption class="writhe1">Река</figcaption>
         </figure>
+        <figure class="card">
+            <img class="foto-small2" src="small.jpg" alt="Горная река">
+            <figcaption class="writhe2">Горная река</figcaption>
+        </figure>
+        <figure class="card">
+            <img class="foto-small3" src="small.jpg" alt="Горы">
+            <figcaption class="writhe3">Горы</figcaption>
+        </figure>    
     </div>
 </body>
 </html>
