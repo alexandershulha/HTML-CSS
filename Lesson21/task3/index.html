@@ -3,51 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive layout</title>
+    <title>Responsive page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
     <style>
-        html{
-            font-size: 18px;
-        }
-        .font-in-px{
-            font-size: 27px;
-        }
-        .font-in-em{
-            font-size: 1.5em;
-        }
-        .font-in-vw{
-            font-size: 5vw;
-        }
-        .font-in-percents{
-            font-size: 150%;
-        }
-        .font-in-rem{
-            font-size: 1.5rem;
-        }
+        *{box-sizing: border-box;
+            margin: 0;
+            padding: 0;}
+        html{font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+            color: #555;}
+        body{display: flex;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: space-between;}
+        .header{background-image: linear-gradient(60deg, red, orange);
+            color: white;
+            height: 10%;
+            text-align: center;
+            padding-top: 10px;}
+        .main{display: flex;
+            height: 85%;}
+        .footer{background-color: #e5e5e5;
+            height: 5%;
+            padding: 0.5em;
+            text-align: center;}
+        .navigation{width: 20%;
+            margin-top: 15px;}
+        .section{width: 60%;
+            font-size: 1.25em;}
+        .news{width: 20%;
+            margin-top: 15px;}
+        .navigation,.section,.news{padding: 0.5em;}
+        .units-list{line-height: 1.75em;
+            margin: 20px;}
+        .css-units{background-color: #e5e5e5;
+            color: #8b0000;
+            font-weight: 700;
+            font-size: 1.25em;}
+        .section_header{font-size: 5vw;
+            text-align: center;
+            padding: 50px;}
+        .nav-list{list-style-type: none;}
+        .nav-list-link{background-color: #808080;
+            display: block;
+            color: white;
+            line-height: 2em;
+            margin-bottom: 0.5em;
+            padding-left: 0.5em;
+            text-decoration: none;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;}
+        
     </style>
 </head>
 <body>
-    <p>
-        Размер шрифта по умолчанию равен <b>16px</b>
-    </p>
-    <p>
-        W3C рекомендует: ИСПОЛЬЗУЕМ <b>em</b> для установки размера<b>18px</b>
-    </p>
-    <p class="font-in-px">
-        Рaзмер шрифта <span class="font-in-px">равен 27px</span> 
-    </p>
-    <p class="font-in-em">
-        Рaзмер шрифта <span class="font-in-em">равен 1.5em</span>
-    </p>
-    <p class="font-in-vw">
-         Размер шрифта ><span class="font-in-vw"> равен 5vw</span>
-    </p>
-    <p class="font-in-percents">
-         Размер шрифта <span class="font-in-percents"> равен </span>
-    </p>
-    <p class="font-in-rem">
-         Размер шрифта <span class="font-in-rem"> равен 1.5rem</span>
-    </p>
+    <header class="header">
+        <h1>Responsive website</h1>
+    </header>
+    <main class="main">
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a class="nav-list-link" href="#">Responsive images</a></li>
+                <li class="nav-list-item"><a class="nav-list-link" href="#">Mediaqueries</a></li>
+                <li class="nav-list-item"><a class="nav-list-link" href="#">Flexbox</a></li>
+            </ul>
+        </nav>
+        <section class="section">
+            <h2 class="section_header">True story</h2>
+            <p>There are few ways to define <code>font-size</code>:</p>
+            <ul class="units-list">
+                <li><span class="css-units">px</span> good if you need strict definition for a size of
+                    text. In other cases it is better to use relative units listed below.</li>
+                <li><span class="css-units">em</span> based on current font size</li>
+                <li><span class="css-units">rem</span>based on <code>&lt;html&gt;</code> font-size</li>
+                <li><span class="css-units">%</span>based on parent font size</li>
+                <li><span class="css-units">vh</span>(viewport height) based on screen height</li>
+                <li><span class="css-units">vw</span>(viewport width) based on screen width</li>
+            </ul>
+        </section>
+        <aside class="news">
+            <h2>Not a news</h2>
+            <p>A web page should look good on any device!</p>
+        </aside>
+    </main>
+    <footer class="footer">Welcome to the responsive world!</footer>
 </body>
 </html>

@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive layout</title>
+    <title>Резиновые блоки</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
     <style>
         *{box-sizing: border-box;}
-        .content{
+        .conteiner{
+            width: 1200px;
+            height: 100vh;
             display: flex;
-            min-height: 100vh;
+            margin-left: 50px;
         }
         .galery{
             width: 80%;
-            background-color: coral;
+            background-color: #fa5;
             display: flex;
         }
         .aside{
-            width: 20%; background-color: aqua;
+            width: 20%;
+            background-color: #5af;
             display: flex;
         }
         .image{
             max-width: 100%;
             margin: auto;
-            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-
+            box-shadow: 0px 7px 16px 0px rgba(0,0,0,0.75);
         }
         .span{
-            font-size: 25px;
+            margin: auto;
+            color: white;
+            padding: 4px;
             text-transform: uppercase;
             font-weight: 700;
-            padding: 10px;
-            color: white;
-            margin: auto;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
@@ -41,14 +42,12 @@
     </style>
 </head>
 <body>
-    <main class="content">
+    <main class="conteiner">
         <section class="galery">
             <img class="image" src="big.jpeg" alt="Tree">
         </section>
         <aside class="aside">
-             <span class="span">
-                Keep calm
-             </span>
+             <span class="span">Keep calm</span>
         </aside>
     </main>
 </body>
