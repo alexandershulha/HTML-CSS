@@ -3,55 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adaptive layout</title>
+    <title>Using breakpoints</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU"
+    crossorigin="anonymous">
     <style>
-       .navigation{
-        height: 200px;
-        background-color: coral;
-        display: flex;
-        flex-grow: 1;
-       }
-       .products-list{
-        height: 200px;
-        background-color: aqua;
-        display: flex;
-        flex-grow: 1;
-       }
-       .news{
-        height: 200px;
-        background-color: chartreuse;
-        display: flex;
-        flex-grow: 1;
-       }
-       span{
-        background-color: antiquewhite;
-        margin: 8px;
-        border-radius: 4px;
-        text-transform: lowercase;
-        margin: auto;
-       }
-       @media screen and (min-width: 600px){
-        .products{
+        *{box-sizing: border-box;
+            padding: 0;
+            margin: 0;}
+        .main{width: 100vw;
+            height: 100vh;}
+        .navigation,.products-list,.news{height: 200px;
+            border-radius: 4px;
             display: flex;
-            flex-grow: 2;
-        }
-       }
-       @media screen and (min-width:1200px) {
-        .main{
-            display: flex;
-        }    
-       }
+            flex-grow: 1;}
+        span{font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-transform: lowercase;
+            background-color: #faebd7;
+            padding: 8px;
+            margin: auto;}
+        .navigation{background-color: #ff7f50;}
+        .products-list{background-color: #006400;}
+        .news{background-color: #0ff;}
+        @media screen and (min-width: 600px){
+        .conteiner{display: flex;
+             flex-grow: 2;}}
+        @media screen and (min-width: 1200px) {
+        .main{display: flex;}}
     </style>
 </head>
 <body>
     <main class="main">
-       <section class="products">
-           <div class="navigation"><span>Navigation</span></div>
-           <div class="products-list"><span>Products</span></div>
-       </section>
-           <div class="news"><span>News</span></div>
-    </main>
+        <div class="conteiner">
+            <div class="navigation"><span>Navigation</span></div>
+            <div class="products-list"><span>Products list</span></div>
+        </div>
+            <div class="news"><span>News</span></div>
+    </main>   
 </body>
 </html>

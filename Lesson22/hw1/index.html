@@ -8,32 +8,27 @@
     integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
-        *{box-sizing: border-box;}
+        *{box-sizing: border-box;
+            padding: 0;
+            margin: 0;}
         html{
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px;
-        }
-        .header{
-            height: 3em;
+            font-size: 16px;}
+        .header{height: 3em;
             background-color: #eee;
-            padding: 1em;
-        }
-        .button{
-            border: none;
+            padding: 1em;}
+        .button{border: none;
             cursor: pointer;
             font-size: 2em;
             padding: 0;
-            margin-top: -10px;
-        }
+            margin-top: -10px;}
         .navigation{
             width: 20%;
-            padding: 0.5em;
-        }
+            padding: 0.5em;}
         .nav-list{
             list-style-type: none;
-            padding: 0;
-        }
-        .nav-list-link{
+            padding: 0;}
+        .nav-list-link{display: block;
             background-color: #808080;
             color: white;
             line-height: 2em;
@@ -42,18 +37,11 @@
             text-decoration: none;
             overflow: hidden;
             white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-        @media  screen and (min-width:600px) {
-           .button{
-            display: none;
-           }          
-        }
-        @media screen and (max-width:600px) {
-            .nav-list{
-                display: none;
-            }
-        }
+            text-overflow: ellipsis;}
+        @media  screen and (min-width:600px){
+        .button{display: none;}}
+        @media screen and (max-width:600px){
+        .nav-list{display: none;}}
     </style>
 </head>
 <body>
