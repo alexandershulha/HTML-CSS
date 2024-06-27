@@ -1,0 +1,13 @@
+html{font-size: 24px;}
+div{display: flex;
+    margin: 16px;
+    border: 1px solid burlywood;}
+.horizontal{height: 50px;
+    align-items: center;
+    justify-content: space-around;}
+.horizontal>span{background-color: aqua;}
+.vertical{height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;}
+.vertical>span{background-color: coral;}
