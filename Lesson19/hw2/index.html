@@ -7,37 +7,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
     <style>
-        *{box-sizing: border-box;}
+        *{box-sizing: border-box;
+            margin: 0;
+            padding: 0;}
          body{display: flex;
-        width: 100vw; height: 100vh;}
+            width: 100vw; 
+            height: 100vh;
+            justify-content: center;}
         .block{
-            display: flex;
-            width: 250px;height: 100px;
+            width: 250px;
+            height: 100px;
             border-radius: 10px;
             background-color: coral;
-            align-items: center;
-            justify-content: center;
-            font-size: 14px;
+            text-align: center;
+            position: absolute;
+            animation: more  2s;
+            animation-fill-mode: forwards;
+            transition-timing-function:ease;}
+
+        .text{
             font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 700;
             text-transform: uppercase;
             color: white;
-            position: absolute;
-            animation: more 2s;
-            margin-left: 35%;
-            animation-fill-mode: forwards;
+            line-height: 100px;}
             
-        }
         @keyframes more{
             from{
-                top: 100px;
-            }
+                top: 100px;}
             to{
-                top: calc(50vh);
-            }
+                top: calc(50vh);}
         }
     </style>
 </head>
 <body>
-    <div class="block">Hello, animated world!</div>
+    <div class="block">
+        <span class="text">Hello, animated world!</span>
+    </div>
 </body>
 </html>

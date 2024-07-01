@@ -8,56 +8,38 @@
     integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
     <style>
         *{box-sizing: border-box;}
-        @keyframes moving{
-            from{
-                left: 420px;
-                opacity: 1;
-            }
-            to{
-                left: 520px;
-            }
-        }
-        @keyframes blinking{
-                0%{
-                    opacity: 0;
-                }
-                50%{
-                    opacity: 1;
-                }
-                100%{
-                    opacity: 0;
-                }
-        }
         .conteiner{
-            width: 100vw;height: 100vh;
-            
-        }
-        .spinner{
+            width: 100vw;
+            height: 100vh;
             display: flex;
-            width: 100vw;height: 100vh;
             align-items: center;
-            justify-content: center;    
-        }
+            justify-content: center;}
         .spinner-text{
             font-family: 'Courier New', Courier, monospace;
             font-size: 16px;
             text-transform: uppercase;
             position: absolute;
             animation: blinking 2s ;
-            animation-iteration-count: infinite;
-            
-        }
+            animation-iteration-count: infinite;}
         .rect{
-            width: 10px;height: 4px;
+            width: 10px;
+            height: 4px;
             border-radius: 2px;
             background-color: black;
             margin-top: 20px;
             position: absolute;
-            animation: moving 2s forwards;
-            animation-direction: alternate-reverse;
-            animation-iteration-count: infinite;
-        }
-
+            animation: moving 2s, blincing 2s forwards;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;}
+        @keyframes moving{
+            from{left: 670px;
+                opacity: 0;}
+            to{left: 740px;
+                opacity: 1;}}
+        @keyframes blinking{
+            0%{opacity: 0;}
+            50%{opacity: 1;}
+            100%{opacity: 0;}}
     </style>
 </head>
 <body>
