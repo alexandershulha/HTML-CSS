@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{background-color: black;
+                  height: 100vh;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;}
+        .checkbox{width: 200px;
+                  height: 75px;
+                  padding-left: 35px;
+                  margin: 16px;
+                  font-size: 24px;
+                  display: flex;
+                  background-color: white;
+                  position: relative;
+                  align-items: center;
+                  justify-content: center;}          
+        input[type="checkbox"]{position: absolute;
+                   top: 0;left: 0;
+                   visibility: hidden;}
+        .checkmark{width: 25px;
+                   height: 25px;
+                   background-color: #b3b3b3;
+                   position: absolute;
+                   top: 0;left: 0;
+                   margin: 25px 30px ;}
+        .checkbox input:checked+.checkmark{
+                   background-color: #006400;}
+        
+    </style>
+</head>
+<body>
+    <label class="checkbox">Checkbox
+        <input type="checkbox" id="custom-checkbox" name="agree">
+        <span class="checkmark" for="custom-checkbox"></span>
+    </label>
+</body>
+</html>
