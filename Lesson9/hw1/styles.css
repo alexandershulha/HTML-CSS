@@ -1,3 +1,5 @@
+*{box-sizing: border-box;
+    margin: 0;}
 .header{background-color: yellow;
     height: 50px;}
 .content{background-color: pink;
@@ -9,4 +11,3 @@
    clear: both;}
 .content,.sidebar{height: 500px;
     float: left;}
-*{box-sizing: border-box;}
