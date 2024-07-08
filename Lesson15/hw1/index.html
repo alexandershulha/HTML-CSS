@@ -10,20 +10,21 @@
        *{box-sizing: border-box;}
        .image-conteiner{
                display: flex;
-               position: relative;}
-       .image{margin: 150px auto;
+               align-items: center;
+               justify-content: center;}
+       .image{margin: auto;
                max-width: 100%;}
-       .image-button{text-align: center;
-               padding-top: 20px;
+       .image-button{
                width: 200px;
                height: 50px;
+               text-align: center;
+               line-height: 50px;
                background-color: bisque;;
                text-transform: uppercase;
                font-size: 12px;
                font-weight: 700;
                filter: opacity(0.5);
-               position: absolute;
-               transform: translate(570px,280px);}
+               position: absolute;}
        .image-button:hover{filter: opacity(1);
                 cursor: pointer;}
     </style>
@@ -32,7 +33,7 @@
     <div class="image-conteiner">
         <img class="image" 
         src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/hw1/big.jpeg"
-         alt="Forest">
+         alt="Field">
         <span class="image-button">Later I'll do something</span>
     </div>
 </body>
