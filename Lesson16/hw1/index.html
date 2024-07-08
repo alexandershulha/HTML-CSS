@@ -7,43 +7,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
     <style>
-        *{box-sizing: border-box;}
-        .page{
+        *{box-sizing: border-box;
+            margin: 0;
+            padding: 0;}
+        .page{width: auto;
+            height: 100vh;
             display: flex;
-            background-color: bisque;}
+            background-color: bisque;
+            align-items: center;
+            justify-content: center;}
         .login-form{
-            display: inline-flexbox;
-            border: 1px solid black;
             width: 300px;
-            height: 420px;
+            height: auto;
             background-color: aqua;
-            margin: 150px auto;
-            box-shadow: 0px 4px 8px 0px rqba(0,0,0,0.2);}
-        .form-control{
+            box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+            padding: 16px;
             font-size: 16px;
-            font-family: 'Courier New', Courier, monospace;
-            padding: 16px;}
+            font-family: monospace;}
+        .form-control{
+            margin-bottom: 8px;}
         .form-title{
             text-transform: uppercase;
-            display: flex;
-            justify-content: center;}
-        .form-input{
-            margin-bottom: 8px;
+            text-align: center;}
+        .form-input{display: block;
             border: 1px solid #808080;
-            width: 260px;
+            width: 100%;
             height: 32px;
             border-radius: 4px;
-            padding: 4px;
+            padding: 4px;;
             outline: none;}
         .form-lable{
             margin-bottom: 4px;}
         .submit-buttom{
-            width: 260px;
+            width: 100%;
             height: 32px;
             border-radius: 4px;
             background-color: #ff7f50;
             color: white;
-            margin: 16px 20px;}
+            margin-top: 16px;
+            text-transform: uppercase;}
         .form-input[type="text"]{
             border: 3px solid #ff0000;}
     </style>
