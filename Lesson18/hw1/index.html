@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Используем как иконку - часть 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+       *{box-sizing: border-box;
+           margin: 0;
+           padding: 0;}
+       .div{display: flex;
+           justify-content: space-around;
+           align-items: flex-start;}
+       .button1{font-size: 16px;
+           border: 0px}
+       .button2{font-size: 32px;
+           border: 0px;}
+       .button3{font-size: 64px;
+           border: 0px;}
+       .button4{font-size: 128px;
+           border: 0px;}
+       .button5{font-size: 256px;
+           border: 0px;}
+    </style>
+</head>
+<body>
+    <div class="div">
+        <button class="button1">
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+        </button>
+        <button class="button2">
+            <i class="fa fa-battery-three-quarters" aria-hidden="true"></i>
+        </button>
+        <button class="button3">
+            <i class="fa fa-battery-half" aria-hidden="true"></i>
+        </button>
+        <button class="button4">
+            <i class="fa fa-battery-quarter" aria-hidden="true"></i>
+        </button>
+        <button class="button5">
+            <i class="fa fa-battery-empty" aria-hidden="true"></i>
+        </button>
+    </div>
+</body>
+</html>
