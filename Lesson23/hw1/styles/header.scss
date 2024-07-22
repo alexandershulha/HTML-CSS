@@ -1,0 +1,26 @@
+@import 'variables.scss';
+.header{height: 3em;
+    background-color: $color-primary;}
+.menu{display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    line-height: 3em;
+    margin-left: 3em;}
+.submenu{margin: 0;
+    padding: 0;
+    position: absolute;
+    list-style-type: none;
+    min-width: 120px;
+    background-color: $color-grey;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    display: none;}
+.menu_item{display: inline-block;}
+.menu_item-text{padding: 8px;}
+.submenu_item{padding-left: 8px;}
+.menu_item_active>span{color: yellow;}
+.submenu_item:hover{color: $text-color-secondary;}
+.menu_item:hover{background-color: $color-secondary;}
+.menu_item_active:hover .submenu{
+    display: block;
+    z-index: 1;}
